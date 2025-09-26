@@ -28,7 +28,7 @@ export default async function ProfilePage({
   function renderTab() {
     switch (tab) {
       case "general":
-        return <GeneralTab user={user} />;
+        return <GeneralTab />;
       case "credits":
         return <CreditsUsageTab />;
       case "subscription":
@@ -40,8 +40,12 @@ export default async function ProfilePage({
       case "beta":
         return <BetaFeaturesTab />;
       default:
-        return <GeneralTab user={user} />;
+        return <GeneralTab />;
     }
+  }
+
+  if (!user) {
+    return <div>User not found.</div>;
   }
 
   return (
