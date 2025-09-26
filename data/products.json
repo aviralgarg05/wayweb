@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Palettable",
+    "description": "Create color palettes with variations and accessibility ch...",
+    "icon": "/icons/palettable.svg",
+    "href": "#"
+  },
+  {
+    "id": 2,
+    "name": "Frames to PDF",
+    "description": "Turn your designs into share-ready PDFs in seconds.",
+    "icon": "/icons/frames-to-pdf.svg",
+    "href": "#"
+  },
+  {
+    "id": 3,
+    "name": "Unit Converter",
+    "description": "Effortlessly convert design dimensions between units.",
+    "icon": "/icons/unit-converter.svg",
+    "href": "#"
+  },
+  {
+    "id": 4,
+    "name": "File Importer",
+    "description": "Import files effortlessly with smart font handling and previews.",
+    "icon": "/icons/file-importer.svg",
+    "href": "#"
+  }
+]
