@@ -1,9 +1,6 @@
 "use client";
-import { motion, useAnimation } from "framer-motion";
-import { use, useState } from "react";
-import SemiCircleSvg from "./SemiCircleSvg";
-import React, { useEffect } from "react";
-import { useMotionValue, animate } from "framer-motion";
+import React, { useState, useEffect } from "react";
+import { motion, useAnimation, useMotionValue, animate } from "framer-motion";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 
