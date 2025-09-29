@@ -379,9 +379,9 @@ export const InfoCards = () => {
 
   return (
     // Main container to center the cards on the page
-    <div className=" bg-white flex items-center justify-center p-8 font-sans">
+    <div className="bg-white flex items-center justify-center p-8">
       {/* Grid container for the cards with the specified gap */}
-      <div className="flex flex-wrap justify-center items-center gap-[43px]">
+      <div className="flex flex-wrap justify-center items-center gap-12">
         {cardData.map((card, index) => (
           <InfoCard
             key={index}
