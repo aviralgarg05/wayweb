@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import dbConnect from "@/lib/db";
 import Session from "@/models/session";
+export { OPTIONS } from "@/lib/cors";
 
 export async function GET(request: Request) {
   try {

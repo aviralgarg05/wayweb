@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import dbConnect from "@/lib/db";
 import OtpRequest from "@/models/otpRequest";
+export { OPTIONS } from "@/lib/cors";
 
 /**
   Client calls this right after sending OTP via the provider and receiving { request_id, expires_in }.
