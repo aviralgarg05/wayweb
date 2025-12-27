@@ -41,7 +41,7 @@ export default function NotificationsCard({ user }: Props) {
                 <button
                 onClick={handleSubscribe}
                 type="button"
-                className="rounded-md border border-primary-way-100 bg-primary-way-5 px-3 py-1.5 text-xs font-medium text-primary-way-100 transition cursor-pointer"
+                className="bg-primary-way-10 outline outline-1 outline-primary-way-100 rounded-lg text-sm font-medium text-primary-way-100 p-2 cursor-pointer hover:bg-primary-way-30 hover:outline hover:outline-1 hover:outline-primary-way-100"
                 >
                 Subscribe Newsletter
                 </button>
