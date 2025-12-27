@@ -19,25 +19,25 @@ export function BetaFeaturesTab() {
           id: "f1",
           title: "Free Access to Premium Tools",
           description:
-            "Unlock premium tools at no cost, boost your productivity and explore all that Waysorted has to offer, for free.",
+            "Unlock all premium tools at no cost during beta. Boost your productivity and explore everything Waysorted has to offer, completely free.",
         },
         {
           id: "f2",
-          title: "500+ Free Credits",
+          title: "Unlimited Credits for Beta Users",
           description:
-            "Start strong with free credits to explore, test, and create without limits. Refer friends & earn even more credits!",
+            "Enjoy unlimited credits throughout the Beta Program. Experiment, test, and work without limits. ",
         },
         {
           id: "f3",
           title: "Exclusive Early Adopter Badge",
           description:
-            "Get recognized as a founding creator, your badge will shine on the leaderboard and mark you as one of the first to join the journey.",
+            "Stand out as a founding creator. Your badge highlights you on the leaderboard and marks your place as one of the very first Beta members.",
         },
         {
           id: "f4",
           title: "Community Access",
           description:
-            "Join an exclusive space where fellow designers connect, share insights, and get direct access to the latest updates.",
+            "Join a exclusive space for designers. Share insights, connect with others, get support, and receive early updates straight from the Waysorted team.",
         },
       ]}
     />

@@ -24,7 +24,7 @@ export default function CreditsUsageCard({ user }: Props) {
       <header className="px-5 py-3 border-b border-secondary-db-5">
         <h1 className="text-base font-medium text-secondary-db-100">Credits Usage</h1>
         <p className="text-sm text-secondary-db-80 font-medium">
-          Track and manage your plugin credits with ease
+          Track and manage your Waysorted credits with ease
         </p>
       </header>
 
@@ -48,7 +48,8 @@ export default function CreditsUsageCard({ user }: Props) {
             <span className="text-secondary-db-90 text-sm">
               / <span className="text-xl">∞ </span>
               {/* {total} */} 
-               credits left
+               {!earlyAccess && "credits left"}
+               {earlyAccess && <span className="text-secondary-db-100 font-medium">Beta Access: Unlimited Credits</span>} 
             </span>
           </div>
 
@@ -93,8 +94,8 @@ export default function CreditsUsageCard({ user }: Props) {
                   height={16}
                   className="object-contain"
                 />
-                <p className="text-sm text-primary-way-100">
-                  Your credits have been upgraded. You can now continue enjoying uninterrupted access to Way.
+                <p className="text-sm text-primary-way-100 -translate-y-1">You&apos;re on the Beta Plan! <br></br>
+                  You now have unlimited plugin credits, giving you complete, uninterrupted access across Waysorted.
                 </p>
               </div>
             </div>

@@ -7,7 +7,7 @@ import clsx from "clsx";
 
 const items = [
   { key: "general", label: "General" },
-  { key: "refer", label: "Refer & Earn", logo:"/icons/refer.svg",  badge: "Earn Credits" },
+  { key: "refer", label: "Refer & Earn", logo:"/icons/refer.svg",  badge: "Coming Soon" },
   { key: "credits", label: "Credits Usage" },
   { key: "subscription", label: "Subscription" },
   { key: "notifications", label: "Notifications" },
@@ -22,7 +22,7 @@ export default function Sidebar() {
   return (
     <>
       {/* Desktop Vertical Sidebar (unchanged) */}
-      <aside className="sticky top-0 hidden h-[calc(100vh-64px)] w-64 shrink-0 border-r border-secondary-db-5 bg-white px-4 pt-4 lg:block">
+      <aside className="sticky top-0 hidden h-[calc(100vh-72px)] w-72 shrink-0 border-r border-secondary-db-5 bg-white px-4 pt-4 lg:block">
         <div className="mb-2 flex flex-col gap-2 border-b border-secondary-db-5 pb-4">
           <Link href="/" className="flex items-center">
             <Image
@@ -45,7 +45,13 @@ export default function Sidebar() {
             aria-label="Back to home"
             className="inline-flex items-center gap-1 text-sm text-secondary-db-70 rounded-md border border-secondary-db-5 mb-6 px-3 py-1 hover:bg-secondary-db-5 hover:text-secondary-db-100 transition-all duration-200"
           >
-            <span className="text-lg">‹</span> Back home
+            <span className="text-lg"><Image
+            src="/icons/back-gray.svg"
+            alt="Back Icon"
+            width={8}
+            height={4}
+            className="object-contain mr-1"
+          /></span> Back home
           </Link>
 
           <div className="px-2">
@@ -101,7 +107,13 @@ export default function Sidebar() {
             className="inline-flex items-center gap-1 text-sm text-secondary-db-70 rounded-md border border-secondary-db-5 px-3 py-1 hover:bg-secondary-db-5 hover:text-secondary-db-100 transition-all duration-200"
             aria-label="Back to home"
           >
-            <span className="text-lg">‹</span> Back home
+            <span className="text-lg"><Image
+            src="/icons/back-gray.svg"
+            alt="Back Icon"
+            width={8}
+            height={4}
+            className="object-contain mr-1"
+          /></span> Back home
           </Link>
         </div>
         <ul className="no-scrollbar flex space-x-2 overflow-x-auto pb-2">

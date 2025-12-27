@@ -9,6 +9,9 @@ type Props = {
 
 export default function NotificationsCard({ user }: Props) {
   const { hasAnyNotifications, notifications } = user;
+  const handleSubscribe = () => {
+    console.log("Subscribe to newsletter");
+  }
 
   return (
     <section className="max-w-3xl rounded-lg border border-secondary-db-5 bg-white">
@@ -36,6 +39,7 @@ export default function NotificationsCard({ user }: Props) {
                 </p>
                 </div>
                 <button
+                onClick={handleSubscribe}
                 type="button"
                 className="rounded-md border border-primary-way-100 bg-primary-way-5 px-3 py-1.5 text-xs font-medium text-primary-way-100 transition cursor-pointer"
                 >

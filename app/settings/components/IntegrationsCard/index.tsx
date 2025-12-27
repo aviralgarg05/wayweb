@@ -54,7 +54,7 @@ export default function IntegrationsCard({ integrations, anyConnected }: Integra
               i
             </span>
             <p className="text-sm">
-              Waysorted is now successfully integrated with listed softwares.
+              Waysorted is now successfully integrated with the listed apps.
             </p>
           </div>
         )}

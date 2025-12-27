@@ -18,7 +18,7 @@ export default function BetaFeaturesCard({ user, features }: BetaFeaturesCardPro
       <header className="px-5 py-3 border-b border-secondary-db-5">
         <h1 className="text-base font-medium text-secondary-db-100">Beta features</h1>
         <p className="text-sm text-secondary-db-80 font-medium">
-          Exclusive early access to our smartest features.
+          Exclusive early access to our smartest and most experimental features.
         </p>
       </header>
 
@@ -66,7 +66,7 @@ export default function BetaFeaturesCard({ user, features }: BetaFeaturesCardPro
                     type="button"
                     className="rounded-md border border-tertiary-vivid-blue-500 bg-tertiary-vivid-blue-100 px-3 py-1.5 text-xs font-medium text-tertiary-vivid-blue-500 transition cursor-pointer"
                 >
-                    Get Early Access
+                    Rate Us
                 </button>
                 </div>
             </div>

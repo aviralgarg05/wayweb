@@ -121,7 +121,7 @@ export default function ToolsPicker({ tools, onVisitPlugin }: Props) {
 
       <div className="order-3 md:order-none md:col-span-2">
         <h3 id={panelTitleId} className="font-semibold text-white text-base sm:text-lg mb-3 sm:mb-4">
-          {selectedTool ? selectedTool.name : "Tool Description"}
+          {selectedTool ? selectedTool.name : "Tool Description"}{" "}Brief
         </h3>
         <div
           className="bg-transparent border border-gray-700 rounded-xl p-4 sm:p-6 min-h-[140px] outline outline-1 outline-white/10 button-shadow flex flex-col justify-between"

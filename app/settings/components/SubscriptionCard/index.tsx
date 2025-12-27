@@ -8,16 +8,15 @@ type Props = {
 };
 
 export default function SubscriptionCard({ user }: Props) {
-  const { earlyAccess, creditsRemaining } = user;
-  // Define credits logic
-  const creditsTotal = earlyAccess ? 200 : 5;
-  const creditsUsed = Math.max(0, creditsTotal - (creditsRemaining ?? 0));
-  //eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const remaining = Math.max(0, creditsRemaining ?? 0);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const exhausted = creditsUsed >= creditsTotal;
+  const { earlyAccess } = user;
 
-  const startedDisplay = earlyAccess ? "Sep 6th, 2025" : "N/A"; // example
+  const startedDisplay = user.createdAt
+    ? new Date(user.createdAt).toLocaleDateString(undefined, {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      })
+    : "N/A";
   const renewalDisplay = null;
   const statusDisplay = earlyAccess ? "Active" : "N/A";
 
@@ -37,7 +36,7 @@ export default function SubscriptionCard({ user }: Props) {
             Your Plan
             {earlyAccess && (
               <span className="inline-flex items-center rounded-sm bg-success-100 px-2 py-1/2 text-xs font-medium text-success-500 border border-success-100">
-                Early Access
+                Beta Access
               </span>
             )}
           </h2>
@@ -59,12 +58,6 @@ export default function SubscriptionCard({ user }: Props) {
                   You don&apos;t have any active Subscription!
                 </p>
               </div>
-              <button
-                type="button"
-                className="rounded-md border border-error-500 bg-error-100 px-3 py-1.5 text-xs font-medium text-error-500 transition cursor-pointer"
-              >
-                Get Early Access
-              </button>
             </div>
           </div>
         ) : (
@@ -80,7 +73,7 @@ export default function SubscriptionCard({ user }: Props) {
                     className="object-contain"
                   />
                   <p className="text-sm text-primary-way-100">
-                    You&apos;re on an Early Access subscription! Enjoy exclusive Waysorted benefits before anyone else - you have unlocked Early bird badge.
+                    You&apos;re on an Beta Access plan! Enjoy unlimited plugin usage, early feature drops, and full Waysorted access, you&apos;re officially part of the Beta Crew.
                   </p>
                 </div>
               </div>
@@ -131,18 +124,13 @@ export default function SubscriptionCard({ user }: Props) {
             </span>
           </div>
 
-          {!earlyAccess ? (
+          {!earlyAccess && 
             <button
               type="button"
               className="inline-flex items-center rounded-md bg-primary-way-10 px-4 py-1.5 text-xs font-medium text-primary-way-100 border border-primary-way-20 hover:bg-primary-way-20 transition cursor-pointer"
             >
               Upgrade now
-            </button>
-          ) : (
-            <span className="inline-flex items-center rounded-md bg-secondary-db-5 px-4 py-1.5 text-[11px] font-medium text-secondary-db-60 border border-secondary-db-5">
-              Upgraded
-            </span>
-          )}
+            </button>}
         </div>
       </div>
     </section>
