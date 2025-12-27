@@ -46,8 +46,8 @@ export default function Focus({ className }: { className?: string }) {
 
       ScrollTrigger.batch(cards, {
         scroller: containerRef.current!,
-        start: "top 80%",
-        end: "bottom 20%",
+        start: "center 60%",
+        end: "center 40%",
         onEnter: (batch) =>
           gsap.to(batch, {
             scale: 1,
@@ -82,7 +82,7 @@ export default function Focus({ className }: { className?: string }) {
     }, containerRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [loading, tools]);
 
   const skeletonCount = 5;
 
@@ -167,8 +167,8 @@ export default function Focus({ className }: { className?: string }) {
         {/* Bottom gradient overlay */}
       </div>
 
-      <div className="bg-white mt-3 flex flex-col items-start rounded-xl">
-        <p className="text-gray-600 text-sm leading-snug mt-2 px-4 pb-4">
+      <div className="bg-white mt-3 flex flex-col rounded-xl">
+        <p className="text-secondary-db-80 text-base font-medium mt-2 px-4 pb-4 text-left">
           All the tools you need in one place.
         </p>
       </div>

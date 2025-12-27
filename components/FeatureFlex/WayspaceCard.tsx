@@ -51,7 +51,7 @@ export default function WayspaceCard({ className }: { className?: string }) {
         
       </div>
 
-      <div className="mt-auto grid grid-cols-3 gap-3">
+      <div className="mt-auto grid grid-cols-3 gap-3 mx-auto">
         <div className="h-18 w-18 rounded-xl bg-[#ECF2FF] flex items-center justify-center text-[#91adea] text-sm">
           Your
         </div>
