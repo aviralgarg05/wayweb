@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Hanken_Grotesk } from "next/font/google";
 import { BannerProvider } from "@/context/BannerContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 // import EarlyAccessPopup from "@/components/EarlyAccessPopup";
 import SplashGate from "@/components/SplashGate";
 
@@ -29,6 +30,7 @@ export default function RootLayout({
         </BannerProvider>
         </SplashGate>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
