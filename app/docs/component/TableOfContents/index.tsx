@@ -63,7 +63,7 @@ export default function TableOfContents({
         const el = document.getElementById(h.id);
         if (!el) continue;
         const rect = el.getBoundingClientRect();
-        if (rect.top <= topOffsetPx + 24) {
+        if (rect.top <= topOffsetPx + 150) {
           current = h.id; // last heading that crossed the threshold
         }
       }
