@@ -22,7 +22,7 @@ export interface SidebarItem {
 const sidebarData: SidebarItem[] = [
   { title: "General", links: ["Getting Started", "Account Creation and Setup", "Quick Integration with Figma", "FAQs"] },
   { title: "Account and Workspace", links: ["Profile and Settings"] },
-  { title: "Plugins and Marketplace", links: ["Searching and Browsing Plugins", "Creator Guidelines", "Request a Feature", "Ratings and Reviews"] },
+  { title: "Tools and Ecosystem", links: ["Searching and Browsing Plugins", "Creator Guidelines", "Request a Feature", "Ratings and Reviews"] },
   { title: "Tools Reference", links: ["PDF Exporter", "Palettable", "Unit Converter", "Import Tool", "Upcoming Tools"] },
   { title: "Troubleshooting & Support", links: ["Common Errors", "Diagnostics", "Contact Support", "Bug Reporting"] },
   { title: "Legal", links: ["Privacy Policy", "Terms of Service", "Data Processing", "Cookie Policy", "Intellectual Property Rights"] },
