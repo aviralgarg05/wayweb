@@ -3,28 +3,26 @@ export default function ContactSupport() {
     <>
       <h2 className="text-2xl font-semibold text-secondary-db-100 mb-4">Contact Support</h2>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        Our support team is here to help you resolve any issues and make the most of Waysorted. Here&apos;s how to reach us and what to expect.
+        Our dedicated support team is here to help when you can&apos;t find a solution in our documentation.
       </p>
 
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Support Channels</h3>
-      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
-        <li><span className="text-secondary-db-100">Email Support</span>: Reach us at support@waysorted.com for detailed inquiries. Response within 24-48 hours.</li>
-        <li><span className="text-secondary-db-100">Help Center</span>: Browse articles and guides in our comprehensive knowledge base.</li>
-        <li><span className="text-secondary-db-100">Community Forum</span>: Connect with other users and get peer support for common questions.</li>
-        <li><span className="text-secondary-db-100">In-App Chat</span>: Premium users can access live chat support during business hours.</li>
-      </ul>
-
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Before Contacting Support</h3>
-      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
-        <li><span className="text-secondary-db-100">Check FAQs</span>: Many common questions are answered in our FAQ section.</li>
-        <li><span className="text-secondary-db-100">Run Diagnostics</span>: Generate a diagnostic report to include with your support request.</li>
-        <li><span className="text-secondary-db-100">Document the Issue</span>: Note the steps to reproduce the problem and any error messages.</li>
-        <li><span className="text-secondary-db-100">Check Status Page</span>: Visit status.waysorted.com to see if there&apos;s a known service issue.</li>
-      </ul>
-
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">What to Include</h3>
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">When to Contact</h3>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        When contacting support, include your account email, browser/device information, steps to reproduce the issue, screenshots if applicable, and any error messages. This helps us resolve your issue faster.
+        Please contact support after you have reviewed the Common Errors section and have gathered the relevant Diagnostics information.
+      </p>
+
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">How to Reach Us</h3>
+      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
+        <li><span className="text-secondary-db-100">Email</span>: Send a detailed message, including all diagnostic information, to info@waysorted.com.</li>
+        <li><span className="text-secondary-db-100">In-App Support</span>: Use the support widget located in your Waysorted&apos;s plugin dashboard for direct access to our team.</li>
+      </ul>
+
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Service Level</h3>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        Our team is available during standard business hours and aims to provide an initial response within 24 hours.
+      </p>
+      <p className="text-secondary-db-70 font-regular text-sm leading-relaxed mt-6">
+        Last updated: December 2025. Need help? Contact info@waysorted.com or submit feedback via Report a Bug.
       </p>
     </>
   );

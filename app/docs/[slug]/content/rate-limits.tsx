@@ -3,28 +3,50 @@ export default function RateLimits() {
     <>
       <h2 className="text-2xl font-semibold text-secondary-db-100 mb-4">Rate Limits</h2>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        To ensure fair usage and maintain service quality, the Waysorted API implements rate limiting. Understanding these limits helps you build reliable integrations.
+        Rate limits protect system resources and align with Waysorted&apos;s credit model. Limits are enforced per API key and reset hourly/daily.
       </p>
 
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Rate Limit Tiers</h3>
-      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
-        <li><span className="text-secondary-db-100">Free Tier</span>: 100 requests per minute, 1,000 requests per day.</li>
-        <li><span className="text-secondary-db-100">Pro Tier</span>: 500 requests per minute, 10,000 requests per day.</li>
-        <li><span className="text-secondary-db-100">Enterprise Tier</span>: Custom limits based on your agreement and needs.</li>
-        <li><span className="text-secondary-db-100">Burst Allowance</span>: Short bursts above limit are allowed but may trigger throttling.</li>
-      </ul>
-
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Response Headers</h3>
-      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
-        <li><span className="text-secondary-db-100">X-RateLimit-Limit</span>: Maximum requests allowed in the current window.</li>
-        <li><span className="text-secondary-db-100">X-RateLimit-Remaining</span>: Number of requests remaining in current window.</li>
-        <li><span className="text-secondary-db-100">X-RateLimit-Reset</span>: Unix timestamp when the rate limit window resets.</li>
-        <li><span className="text-secondary-db-100">Retry-After</span>: Seconds to wait before retrying when rate limited (429 response).</li>
-      </ul>
-
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Handling Rate Limits</h3>
-      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        Implement exponential backoff when you receive 429 responses. Cache responses when possible to reduce API calls. Monitor your usage through the developer dashboard to stay within limits.
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Rate Limit Table</h3>
+      <div className="overflow-x-auto mt-4">
+        <table className="min-w-full text-secondary-db-70 text-lg">
+          <thead>
+            <tr className="border-b border-secondary-db-30">
+              <th className="text-left py-2 pr-4 text-secondary-db-100 font-semibold">Limit Type</th>
+              <th className="text-left py-2 pr-4 text-secondary-db-100 font-semibold">Value</th>
+              <th className="text-left py-2 pr-4 text-secondary-db-100 font-semibold">Scope</th>
+              <th className="text-left py-2 text-secondary-db-100 font-semibold">Exceeded Response</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-secondary-db-20">
+              <td className="py-2 pr-4">Requests per Minute (RPM)</td>
+              <td className="py-2 pr-4">60</td>
+              <td className="py-2 pr-4">Per API</td>
+              <td className="py-2">429 Too Many Requests</td>
+            </tr>
+            <tr className="border-b border-secondary-db-20">
+              <td className="py-2 pr-4">Daily Requests</td>
+              <td className="py-2 pr-4">1,000</td>
+              <td className="py-2 pr-4">Per API Key</td>
+              <td className="py-2">429 (burst allowed up to 1,200)</td>
+            </tr>
+            <tr className="border-b border-secondary-db-20">
+              <td className="py-2 pr-4">Concurrent Jobs</td>
+              <td className="py-2 pr-4">5</td>
+              <td className="py-2 pr-4">Per User</td>
+              <td className="py-2">503 Service Unavailable</td>
+            </tr>
+            <tr>
+              <td className="py-2 pr-4">File Size</td>
+              <td className="py-2 pr-4">50MB</td>
+              <td className="py-2 pr-4">Per Upload</td>
+              <td className="py-2">413 Payload Too Large</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="text-secondary-db-70 font-regular text-sm leading-relaxed mt-6">
+        Last updated: December 2025. Need help? Contact info@waysorted.com or submit feedback via Report a Bug.
       </p>
     </>
   );

@@ -3,28 +3,58 @@ export default function Webhooks() {
     <>
       <h2 className="text-2xl font-semibold text-secondary-db-100 mb-4">Webhooks</h2>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        Webhooks allow your application to receive real-time notifications when events occur in Waysorted. Instead of polling the API, webhooks push data to your server automatically.
+        Webhooks enable asynchronous notifications for long-running tasks (e.g., conversions &gt;10s), reducing polling overhead. Supported for CMYK, PSD, and DPI APIs; EPS is synchronous.
       </p>
 
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Setting Up Webhooks</h3>
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Setup</h3>
       <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
-        <li><span className="text-secondary-db-100">Endpoint Configuration</span>: Register your webhook URL in Settings &gt; Developer &gt; Webhooks.</li>
-        <li><span className="text-secondary-db-100">Event Selection</span>: Choose which events trigger webhook notifications.</li>
-        <li><span className="text-secondary-db-100">Secret Key</span>: Generate a secret key to verify webhook signatures.</li>
-        <li><span className="text-secondary-db-100">Testing</span>: Use the &quot;Test Webhook&quot; button to verify your endpoint is working.</li>
+        <li><span className="text-secondary-db-100">Registration</span>: POST to /v1/webhooks/register with your callback URL, events, and secret.</li>
+        <li><span className="text-secondary-db-100">Verification</span>: Waysorted sends a challenge POST; echo back in response body.</li>
       </ul>
 
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Available Events</h3>
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Events</h3>
       <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
-        <li><span className="text-secondary-db-100">palette.created</span>: Triggered when a new color palette is saved.</li>
-        <li><span className="text-secondary-db-100">palette.updated</span>: Fired when an existing palette is modified.</li>
-        <li><span className="text-secondary-db-100">credits.earned</span>: Notification when the user earns credits.</li>
-        <li><span className="text-secondary-db-100">sync.completed</span>: Sent when a Figma sync operation finishes.</li>
+        <li><span className="text-secondary-db-100">job.started</span>: Triggered when a job begins processing.</li>
+        <li><span className="text-secondary-db-100">job.completed</span>: Triggered when a job finishes successfully with download URL.</li>
+        <li><span className="text-secondary-db-100">job.failed</span>: Triggered when a job fails with error details.</li>
       </ul>
 
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Security and Verification</h3>
-      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        Always verify webhook signatures using the provided secret key. Respond with a 200 status code within 30 seconds to acknowledge receipt. Failed deliveries are retried with exponential backoff for up to 24 hours.
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Security</h3>
+      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
+        <li>Payloads HMAC-SHA256 signed with your secret (header: X-Webhook-Signature). Verify on receipt.</li>
+        <li>Retries: Exponential backoff (up to 5 attempts, 1h window) on 5xx/timeout.</li>
+        <li>Unregister: DELETE /v1/webhooks/&#123;webhook_id&#125;.</li>
+      </ul>
+
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Example Payload (Completed)</h3>
+      <pre className="bg-secondary-db-10 p-4 rounded-lg text-secondary-db-70 text-sm overflow-x-auto">
+        {`{
+  "event": "job.completed",
+  "timestamp": "2025-10-30T12:00:00Z",
+  "data": {
+    "job_id": "cmyk-job-uuid-456",
+    "result": { "download_url": "https://...", "status": "success" }
+  },
+  "signature": "sha256=abc123..."
+}`}
+      </pre>
+
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Handling in Node.js</h3>
+      <pre className="bg-secondary-db-10 p-4 rounded-lg text-secondary-db-70 text-sm overflow-x-auto">
+        {`app.post('/waysorted-callback', (req, res) => {
+  const signature = req.headers['x-webhook-signature'];
+  const payload = JSON.stringify(req.body);
+  const expected = crypto.createHmac('sha256', SECRET).update(payload).digest('hex');
+  if (crypto.timingSafeEqual(Buffer.from(signature), Buffer.from(expected))) {
+    // Process event
+    res.status(200).send('OK');
+  } else {
+    res.status(401).send('Invalid signature');
+  }
+});`}
+      </pre>
+      <p className="text-secondary-db-70 font-regular text-sm leading-relaxed mt-6">
+        Last updated: December 2025. Need help? Contact info@waysorted.com or submit feedback via Report a Bug.
       </p>
     </>
   );

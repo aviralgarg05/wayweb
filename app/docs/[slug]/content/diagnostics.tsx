@@ -3,28 +3,32 @@ export default function Diagnostics() {
     <>
       <h2 className="text-2xl font-semibold text-secondary-db-100 mb-4">Diagnostics</h2>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        Use Waysorted&apos;s diagnostic tools to identify and troubleshoot issues with your setup, connections, and plugin performance.
+        Providing our support team with detailed diagnostic information is the most effective way to accelerate the resolution of your issue. Please gather the following before submitting a report:
       </p>
 
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Running Diagnostics</h3>
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Environment Details</h3>
       <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
-        <li><span className="text-secondary-db-100">System Check</span>: Navigate to Settings &gt; Diagnostics to run a comprehensive system health check.</li>
-        <li><span className="text-secondary-db-100">Connection Test</span>: Verify connectivity to Waysorted servers and Figma APIs.</li>
-        <li><span className="text-secondary-db-100">Plugin Validation</span>: Check installed plugins for compatibility issues or updates.</li>
-        <li><span className="text-secondary-db-100">Cache Status</span>: View cached data size and clear cache to resolve storage-related issues.</li>
+        <li><span className="text-secondary-db-100">Plugin Name &amp; Version</span>: Specify the exact Waysorted tool and its version number.</li>
+        <li><span className="text-secondary-db-100">Figma Version</span>: Note whether you are using the Figma Desktop App (include version) or a web browser (include browser name and version).</li>
+        <li><span className="text-secondary-db-100">Operating System</span>: Specify your OS (e.g., macOS Ventura 13.5, Windows 11).</li>
       </ul>
 
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Diagnostic Reports</h3>
-      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
-        <li><span className="text-secondary-db-100">Generate Report</span>: Create a detailed diagnostic report to share with support for troubleshooting.</li>
-        <li><span className="text-secondary-db-100">Error Logs</span>: Access recent error logs to identify patterns or recurring issues.</li>
-        <li><span className="text-secondary-db-100">Performance Metrics</span>: View plugin load times, memory usage, and API response times.</li>
-        <li><span className="text-secondary-db-100">Version Information</span>: Check current versions of Waysorted, plugins, and dependencies.</li>
-      </ul>
-
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Self-Service Fixes</h3>
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Replication Steps</h3>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        The diagnostics page offers one-click fixes for common issues, including cache clearing, token refresh, and plugin reinstallation. Try these automated fixes before contacting support.
+        Provide a clear, numbered, step-by-step list of the actions that trigger the issue. This is the most critical piece of information.
+      </p>
+
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Visual Evidence</h3>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        A screenshot or, ideally, a short screen recording (screencast) of the issue occurring is extremely helpful.
+      </p>
+
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Error Messages</h3>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        If any error messages are displayed, copy and paste the exact text.
+      </p>
+      <p className="text-secondary-db-70 font-regular text-sm leading-relaxed mt-6">
+        Last updated: December 2025. Need help? Contact info@waysorted.com or submit feedback via Report a Bug.
       </p>
     </>
   );

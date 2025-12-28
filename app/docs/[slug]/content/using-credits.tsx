@@ -3,28 +3,40 @@ export default function UsingCredits() {
     <>
       <h2 className="text-2xl font-semibold text-secondary-db-100 mb-4">Using Credits</h2>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        Credits unlock premium features and plugins across the Waysorted ecosystem. Here&apos;s how to spend your credits effectively.
+        Credits represent the relative system cost of using different tools and actions across platforms. This includes operations such as exports, imports, conversions, and advanced processing.
       </p>
 
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">What You Can Buy</h3>
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">In Beta</h3>
       <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
-        <li><span className="text-secondary-db-100">Premium Plugins</span>: Unlock access to premium plugins from the marketplace.</li>
-        <li><span className="text-secondary-db-100">AI Features</span>: Use AI-powered tools like advanced color generation and design suggestions.</li>
-        <li><span className="text-secondary-db-100">Extended Storage</span>: Purchase additional cloud storage for your assets and backups.</li>
-        <li><span className="text-secondary-db-100">Priority Support</span>: Get faster support responses with premium support credits.</li>
+        <li>Credits are shown for visibility only</li>
+        <li>No actions are blocked</li>
+        <li>No deductions limit usage</li>
       </ul>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
+        In future releases, credits will help ensure fair access across all supported software environments.
+      </p>
 
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Making Purchases</h3>
-      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
-        <li><span className="text-secondary-db-100">One-Click Purchase</span>: Click the &quot;Buy with Credits&quot; button on any plugin or feature page.</li>
-        <li><span className="text-secondary-db-100">Confirm Transaction</span>: Review the credit cost and confirm your purchase.</li>
-        <li><span className="text-secondary-db-100">Instant Access</span>: Purchased items are available immediately after transaction.</li>
-        <li><span className="text-secondary-db-100">Receipt</span>: View purchase receipts in Settings &gt; Credits &gt; Transaction History.</li>
-      </ul>
-
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Refund Policy</h3>
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Export Tools</h3>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        Credit purchases for plugins may be refunded within 7 days if the plugin doesn&apos;t work as described. Contact support with your transaction ID to request a refund. Credits purchased directly are non-refundable.
+        Export tools convert designs or assets into shareable formats. Usage indicators vary based on factors such as file size, resolution, and batch operations. These indicators are informational only during beta.
+      </p>
+
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Paletteable</h3>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        Palette generation uses lightweight computation for standard use cases, with higher indicators for accessibility simulations or complex color sets. All features remain fully accessible in beta.
+      </p>
+
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Unit Conversion</h3>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        Unit conversion primarily relies on mathematical operations. Advanced presets such as DPI, bleed, or saved configurations may display higher usage indicators for transparency.
+      </p>
+
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Import Tools</h3>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        Import tools handle external files and data. Usage indicators scale with file complexity and size to reflect processing cost. Previews remain accessible without restriction.
+      </p>
+      <p className="text-secondary-db-70 font-regular text-sm leading-relaxed mt-6">
+        Last updated: December 2025. Need help? Contact info@waysorted.com or submit feedback via Report a Bug.
       </p>
     </>
   );
