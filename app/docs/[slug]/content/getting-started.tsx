@@ -1,43 +1,81 @@
 export default function GettingStarted() {
   return (
     <>
-      <h2 className="text-2xl font-semibold text-secondary-db-100 mb-4">What is Waysorted?</h2>
+      <h2 className="text-2xl font-semibold text-secondary-db-100 mb-4">Getting Started</h2>
+      <p className="text-secondary-db-70 font-regular text-sm italic leading-relaxed mb-6">
+        A note on start: This is a living document. It will continue to evolve as Waysorted grows, with updates reflecting new features, improvements, and user feedback.
+      </p>
+
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        Waysorted is a unified tools platform built for designers and creators who want to simplify their workflow. It brings multiple high-quality tools together under one roof, reducing fragmentation, minimizing plugin overhead, and enabling faster, more focused work.
+        Waysorted is a unified plugin marketplace that helps reduce tool overload by accessing curated tool bundles through a single platform.
+      </p>
+
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">1. What is Waysorted?</h3>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        Waysorted is a centralized marketplace for design plugins, focused on speed, simplicity, and productivity. Instead of installing and managing multiple individual plugins, Waysorted allows you to access them through use-case-based bundled tools.
       </p>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
-        Rather than juggling separate plugins, subscriptions, or tabs, Waysorted provides a single, thoughtfully designed environment where essential tools are always within reach. Whether you&apos;re managing color systems, converting units, importing assets, or preparing files for handoff, Waysorted keeps your workflow streamlined and uninterrupted.
-      </p>
-
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Waysorted Principles</h3>
-      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        Every decision at Waysorted is guided by a set of core beliefs:
+        Waysorted helps individuals and teams stay focused, efficient, and scalable by:
       </p>
       <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
-        <li><span className="text-secondary-db-100">Simplicity Over Bloat</span>: We build tools that do their job without unnecessary features or friction.</li>
-        <li><span className="text-secondary-db-100">Unified Experience</span>: One platform, one interface, seamless transitions.</li>
-        <li><span className="text-secondary-db-100">Designer-Centered</span>: Everything is designed by and for designers, with attention to nuance and need.</li>
-        <li><span className="text-secondary-db-100">Accessible Quality</span>: Professional-grade tools should be available to all, not locked behind high barriers.</li>
-        <li><span className="text-secondary-db-100">Responsible Growth</span>: We expand thoughtfully, ensuring that every new tool adds clear value.</li>
-      </ul>
-
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Core Tools Overview</h3>
-      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        Waysorted currently offers four core tools, each designed to address a specific need in modern design workflows:
-      </p>
-      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
-        <li><span className="text-secondary-db-100">Paletteable</span>: A comprehensive color tool for palette generation, harmony exploration, and real-time accessibility checks.</li>
-        <li><span className="text-secondary-db-100">Unit Converter</span>: A precision tool for converting design dimensions across various units (MM, CM, IN, M), including DPI control, bleed margins, orientation, and presets.</li>
-        <li><span className="text-secondary-db-100">Import Tool</span>: A versatile importer supporting formats like EPS, PSD, AI, JSON, CSV, FBX, and PPTX, with font detection and resolution options.</li>
-        <li><span className="text-secondary-db-100">Export Tools</span>: Includes PDF export to CMYK and DPI conversion capabilities for print and multi-platform delivery.</li>
+        <li>Discovering and using essential plugins faster</li>
+        <li>Reducing cost and subscription clutter</li>
+        <li>Managing essential tools from one interface</li>
       </ul>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
-        All tools are accessible from the Waysorted plugin without needing separate installations.
+        Waysorted is built for UI/UX designers, product designers, students, and design teams who rely on multiple plugins and want a simpler, more efficient workflow.
       </p>
 
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Credits in Waysorted</h3>
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">2. Accessing Waysorted in Figma</h3>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        Waysorted uses a credit-based system to ensure fair usage and sustainable access to tools across all users. Credits reflect the relative cost of different actions, such as exports, imports, or advanced processing.
+        Getting started takes only a few seconds.
+      </p>
+      <ul className="list-decimal list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
+        <li>Visit the Waysorted website or Figma plugin.</li>
+        <li>Sign up or log in.</li>
+        <li>Head back to your Waysorted Plugin in Figma to access Beta releases.</li>
+      </ul>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
+        No separate installations are required for bundled plugins.
+      </p>
+
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">3. All-in-one Tools</h3>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        Waysorted brings essential design tools into a single workspace, helping you complete common tasks without switching plugins or breaking focus.
+      </p>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4 font-semibold text-secondary-db-100">
+        Live tools in Beta Version:
+      </p>
+      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-2">
+        <li><span className="text-secondary-db-100">PDF Exporter</span> – Export frames or projects as high-quality, share-ready PDFs</li>
+        <li><span className="text-secondary-db-100">Paletteable</span> – Generate accessible color palettes with variations and contrast checks</li>
+        <li><span className="text-secondary-db-100">Unit Conversion</span> – Convert and resize designs across units with presets and DPI control</li>
+        <li><span className="text-secondary-db-100">Import Tool</span> – Import external files (PSD, AI, CSV, PPT, and more) with smart handling</li>
+      </ul>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
+        Each tool is optimized for speed, consistency, and workflow efficiency. For detailed usage, examples, and step-by-step guides, visit the Learning Hub.
+      </p>
+
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">4. Supported Platforms</h3>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        Waysorted is built as a cross-platform tool ecosystem, with support rolling out in phases.
+      </p>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4 font-semibold text-secondary-db-100">
+        Currently supported:
+      </p>
+      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-2">
+        <li><span className="text-secondary-db-100">Design Tool:</span> Figma (via Waysorted plugin)</li>
+        <li><span className="text-secondary-db-100">Access Mode:</span> Web-based account with in-tool authentication</li>
+        <li><span className="text-secondary-db-100">OS Support:</span> macOS, Windows, and Linux (via Figma’s cross-platform support)</li>
+        <li><span className="text-secondary-db-100">Account Requirement:</span> A Waysorted account is required to access tools, sync usage, and manage preferences across platforms.</li>
+      </ul>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4 italic">
+        Note: Waysorted is in Beta Version currently. Platform availability may expand in future releases.
+      </p>
+
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">5. Credits & Usage</h3>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        Waysorted uses a credit-based usage system designed to provide a fair, scalable way to access tools across the platform. Credits act as a universal usage layer, helping balance resource-intensive operations while keeping workflows smooth and transparent.
       </p>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
         During the beta phase, all actions are unlimited, and credits are shown for visibility only. No tools or features are restricted, allowing users to explore the full platform without limits.
@@ -46,16 +84,31 @@ export default function GettingStarted() {
         In the full release, credits will be consumed when certain tools or advanced actions are used, particularly for operations such as exports, imports, and high-complexity processing. Credits may be earned through platform activity or purchased as part of subscription plans, ensuring flexibility for both individual designers and teams (in future).
       </p>
 
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">What&apos;s Coming Next</h3>
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">6. What&apos;s Coming Next</h3>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        Waysorted is continuously evolving to become a unified, cross-platform productivity ecosystem for designers and creators.
+        Waysorted is continuously evolving to become a unified, cross-platform productivity ecosystem for designers and creators. Our upcoming updates focus on scalability, collaboration, intelligence, and ecosystem expansion, while preserving speed and simplicity.
       </p>
-      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
-        <li><span className="text-secondary-db-100">AI-Powered Tools &amp; Assistive Workflows</span>: We are actively developing AI-assisted tools to automate repetitive tasks, enhance decision-making, and accelerate design workflows.</li>
-        <li><span className="text-secondary-db-100">Ecosystem &amp; Third-Party Expansion</span>: Waysorted plans to open its platform to trusted third-party tools and integrations, enabling a broader ecosystem while maintaining quality, compatibility, and performance standards.</li>
-        <li><span className="text-secondary-db-100">Cloud Sync &amp; Cross-Device Continuity</span>: Waysorted will introduce secure cloud synchronization, allowing your preferences, settings, and usage history to stay consistent across devices and supported software platforms.</li>
-        <li><span className="text-secondary-db-100">Team Workspaces &amp; Collaboration</span>: Upcoming team features will enable shared workspaces, role-based access, and collaborative tool usage. This will help design teams standardize workflows and collaborate without plugin sprawl.</li>
-      </ul>
+
+      <h4 className="text-lg font-semibold text-secondary-db-100 mt-6 mb-2">AI-Powered Tools & Assistive Workflows</h4>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        We are actively developing AI-assisted tools to automate repetitive tasks, enhance decision-making, and accelerate design workflows. These capabilities will integrate directly into existing tools, focusing on practical utility rather than complexity.
+      </p>
+
+      <h4 className="text-lg font-semibold text-secondary-db-100 mt-6 mb-2">Ecosystem & Third-Party Expansion</h4>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        Waysorted plans to open its platform to trusted third-party tools and integrations, enabling a broader ecosystem while maintaining quality, compatibility, and performance standards. This expansion will allow users to access more specialized capabilities without leaving the Waysorted environment.
+      </p>
+
+      <h4 className="text-lg font-semibold text-secondary-db-100 mt-6 mb-2">Cloud Sync & Cross-Device Continuity</h4>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        Waysorted will introduce secure cloud synchronization, allowing your preferences, settings, and usage history to stay consistent across devices and supported software platforms. This ensures a seamless experience whether you work solo or switch environments.
+      </p>
+
+      <h4 className="text-lg font-semibold text-secondary-db-100 mt-6 mb-2">Team Workspaces & Collaboration</h4>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        Upcoming team features will enable shared workspaces, role-based access, and collaborative tool usage. This will help design teams standardize workflows, manage resources efficiently, and collaborate without plugin sprawl.
+      </p>
+
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-6">
         Subscribe to the newsletter to stay informed.
       </p>

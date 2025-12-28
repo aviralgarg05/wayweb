@@ -10,7 +10,7 @@ export default function EarningCredits() {
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
         To view credit-related information:
       </p>
-      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
+      <ul className="list-decimal list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
         <li>Log in to your Waysorted account at waysorted.com.</li>
         <li>From the top navigation, select your Account settings and open Credits Usage.</li>
       </ul>
@@ -20,10 +20,10 @@ export default function EarningCredits() {
 
       <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Initial Credits (Post-Beta)</h3>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        <span className="text-secondary-db-100">Description:</span> After beta, initial credits may be granted upon first-time signup and platform authentication.
+        <span className="text-secondary-db-100 font-semibold">Description:</span> After beta, initial credits may be granted upon first-time signup and platform authentication.
       </p>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
-        <span className="text-secondary-db-100">Purpose:</span> To allow new users to explore core tools without friction while maintaining platform sustainability as Waysorted scales across multiple software ecosystems.
+        <span className="text-secondary-db-100 font-semibold">Purpose:</span> To allow new users to explore core tools without friction while maintaining platform sustainability as Waysorted scales across multiple software ecosystems.
       </p>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
         Note: Initial credit limits are not enforced during beta.

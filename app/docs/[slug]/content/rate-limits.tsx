@@ -6,9 +6,8 @@ export default function RateLimits() {
         Rate limits protect system resources and align with Waysorted&apos;s credit model. Limits are enforced per API key and reset hourly/daily.
       </p>
 
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Rate Limit Table</h3>
-      <div className="overflow-x-auto mt-4">
-        <table className="min-w-full text-secondary-db-70 text-lg">
+      <div className="overflow-x-auto mt-6">
+        <table className="min-w-full text-secondary-db-70 text-lg border-collapse">
           <thead>
             <tr className="border-b border-secondary-db-30">
               <th className="text-left py-2 pr-4 text-secondary-db-100 font-semibold">Limit Type</th>
@@ -22,7 +21,7 @@ export default function RateLimits() {
               <td className="py-2 pr-4">Requests per Minute (RPM)</td>
               <td className="py-2 pr-4">60</td>
               <td className="py-2 pr-4">Per API</td>
-              <td className="py-2">429 Too Many Requests</td>
+              <td className="py-2">429 Too Many Requests: <code className="text-sm bg-secondary-db-10 px-1 rounded">{`{ "error": "RateLimitExceeded", "retry_after": 60 }`}</code></td>
             </tr>
             <tr className="border-b border-secondary-db-20">
               <td className="py-2 pr-4">Daily Requests</td>
@@ -45,6 +44,7 @@ export default function RateLimits() {
           </tbody>
         </table>
       </div>
+
       <p className="text-secondary-db-70 font-regular text-sm leading-relaxed mt-6">
         Last updated: December 2025. Need help? Contact info@waysorted.com or submit feedback via Report a Bug.
       </p>

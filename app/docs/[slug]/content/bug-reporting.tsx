@@ -5,6 +5,7 @@ export default function BugReporting() {
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
         A bug is a specific, reproducible error or unexpected behavior within the Waysorted platform. Reporting bugs helps us improve product stability, performance, and overall experience for the entire community.
       </p>
+
       <p className="text-secondary-db-70 font-regular text-sm leading-relaxed mt-6">
         Last updated: December 2025. Need help? Contact info@waysorted.com or submit feedback via Report a Bug.
       </p>

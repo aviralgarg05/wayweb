@@ -8,7 +8,7 @@ export default function CommonErrors() {
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
         Before contacting support, review the common errors and diagnostics below for faster resolution.
       </p>
-      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4 italic">
         Note: Waysorted is currently in beta. While we strive for stability, occasional bugs or unexpected behavior may occur, similar to other beta-stage products.
       </p>
 
@@ -34,6 +34,7 @@ export default function CommonErrors() {
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
         If a feature or setting seems unavailable, it may be due to changes or limitations within the current beta release. Some features may be temporarily disabled, renamed, or under iteration. We recommend reviewing recent product updates or release notes where applicable. Availability may also change as the platform evolves during beta.
       </p>
+
       <p className="text-secondary-db-70 font-regular text-sm leading-relaxed mt-6">
         Last updated: December 2025. Need help? Contact info@waysorted.com or submit feedback via Report a Bug.
       </p>

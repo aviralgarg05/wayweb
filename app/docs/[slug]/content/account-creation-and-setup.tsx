@@ -7,7 +7,7 @@ export default function AccountCreationAndSetup() {
       </p>
 
       <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Creating an Account</h3>
-      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
+      <ul className="list-decimal list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
         <li>Visit waysorted.com and click &quot;Sign Up&quot;.</li>
         <li>Enter your email address and create a password, or sign up via linked accounts (e.g., Google).</li>
         <li>Verify your email through the confirmation link sent to your inbox.</li>
@@ -16,7 +16,7 @@ export default function AccountCreationAndSetup() {
 
       <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Profile Setup</h3>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        Refer to the &quot;General&quot; section for customization:
+        Refer to the &quot;General&quot; for customization:
       </p>
       <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
         <li><span className="text-secondary-db-100">Profile Details</span>: Update your name, email, and profile photo (e.g., upload or change via &quot;Change Photo&quot; button; remove if needed).</li>

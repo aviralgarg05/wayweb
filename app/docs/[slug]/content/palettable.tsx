@@ -1,7 +1,7 @@
 export default function Palettable() {
   return (
     <>
-      <h2 className="text-2xl font-semibold text-secondary-db-100 mb-4">Paletteable</h2>
+      <h2 className="text-2xl font-semibold text-secondary-db-100 mb-4">Paletteable Specifications</h2>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
         An advanced color management tool developed specifically for professional design workflows. It offers comprehensive color manipulation, professional accessibility testing, and seamless export capabilities.
       </p>

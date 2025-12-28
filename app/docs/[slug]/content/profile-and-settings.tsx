@@ -14,13 +14,13 @@ export default function ProfileAndSettings() {
         Use the left sidebar to manage different account areas:
       </p>
       <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
-        <li><span className="text-secondary-db-100">General</span>: Profile and basic account information</li>
-        <li><span className="text-secondary-db-100">Refer &amp; Earn</span>: Earn credits by referrals (coming soon)</li>
-        <li><span className="text-secondary-db-100">Credits Usage</span>: View credit balance, usage history, and recharges</li>
-        <li><span className="text-secondary-db-100">Subscription</span>: Manage plans, billing, and add-ons</li>
-        <li><span className="text-secondary-db-100">Notifications</span>: Control email and in-app alerts</li>
-        <li><span className="text-secondary-db-100">Integrations</span>: Manage linked services</li>
-        <li><span className="text-secondary-db-100">Beta Features</span>: Access early and experimental tools</li>
+        <li><span className="text-secondary-db-100">General</span> – Profile and basic account information</li>
+        <li><span className="text-secondary-db-100">Refer &amp; Earn</span> – Earn credits by referrals (coming soon)</li>
+        <li><span className="text-secondary-db-100">Credits Usage</span> – View credit balance, usage history, and recharges</li>
+        <li><span className="text-secondary-db-100">Subscription</span> – Manage plans, billing, and add-ons</li>
+        <li><span className="text-secondary-db-100">Notifications</span> – Control email and in-app alerts</li>
+        <li><span className="text-secondary-db-100">Integrations</span> – Manage linked services</li>
+        <li><span className="text-secondary-db-100">Beta Features</span> – Access early and experimental tools</li>
       </ul>
 
       <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Profile &amp; Settings Overview</h3>
@@ -35,29 +35,57 @@ export default function ProfileAndSettings() {
       </p>
 
       <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Profile Details</h3>
+
+      <h4 className="text-lg font-semibold text-secondary-db-100 mt-6 mb-2">Profile Photo</h4>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        <span className="text-secondary-db-100">Profile Photo:</span> Your profile photo appears across Waysorted in collaborations, comments, and the marketplace.
+        Your profile photo appears across Waysorted in collaborations, comments, and the marketplace.
       </p>
       <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-2">
         <li>Upload JPG, PNG, or GIF (max 5MB)</li>
         <li>Automatically cropped to a circle</li>
         <li>Remove anytime to revert to initials</li>
       </ul>
-      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
-        <span className="text-secondary-db-100">Name:</span> Your display name is visible across the platform. Maximum 50 characters, alphabetic characters only, updates apply instantly.
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-2 italic">
+        Tip: Use a professional photo for public or creator profiles.
       </p>
-      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
-        <span className="text-secondary-db-100">Email:</span> Your primary email is used for login, notifications, billing, and recovery. To update: Edit your email address, verify via confirmation link, existing email remains active until verification is complete.
+
+      <h4 className="text-lg font-semibold text-secondary-db-100 mt-6 mb-2">Name</h4>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        Your display name is visible across the platform.
       </p>
+      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-2">
+        <li>Maximum 50 characters</li>
+        <li>Alphabetic characters only</li>
+        <li>Updates apply instantly</li>
+      </ul>
+
+      <h4 className="text-lg font-semibold text-secondary-db-100 mt-6 mb-2">Email</h4>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+        Your primary email is used for login, notifications, billing, and recovery.
+      </p>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-2">
+        To update:
+      </p>
+      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-2">
+        <li>Edit your email address</li>
+        <li>Verify via confirmation link</li>
+        <li>Existing email remains active until verification is complete</li>
+      </ul>
 
       <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Linked Accounts &amp; Integrations</h3>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
         Connect third-party services to enable faster access and enhanced functionality.
       </p>
-      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
-        Currently supported: Google (Single Sign-On and integrations)
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4 font-semibold text-secondary-db-100">
+        Currently supported:
       </p>
-      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
+      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-2">
+        <li>Google (Single Sign-On and integrations)</li>
+      </ul>
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
+        Actions:
+      </p>
+      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-2">
         <li>Link via secure authorization</li>
         <li>Unlink at any time from the same panel</li>
       </ul>
@@ -67,9 +95,12 @@ export default function ProfileAndSettings() {
 
       <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Notifications Preferences</h3>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
-        Customize how you receive updates from Waysorted. Notification types include:
+        Customize how you receive updates from Waysorted.
       </p>
-      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4 font-semibold text-secondary-db-100">
+        Notification types include:
+      </p>
+      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-2">
         <li>Product updates and feature releases</li>
         <li>New plugins, rewards, and credits</li>
         <li>Surveys, raffles, and announcements</li>

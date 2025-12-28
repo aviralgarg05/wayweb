@@ -1,7 +1,7 @@
 export default function ImportTool() {
   return (
     <>
-      <h2 className="text-2xl font-semibold text-secondary-db-100 mb-4">Import Tool Formats and Credits</h2>
+      <h2 className="text-2xl font-semibold text-secondary-db-100 mb-4">Import Tool Specifications</h2>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
         A versatile importer that converts various file types into editable Figma elements, streamlining asset migration and data integration.
       </p>
@@ -20,8 +20,7 @@ export default function ImportTool() {
         <li><span className="text-secondary-db-100">Resolution</span>: Suggests equivalent Google Fonts for download or provides an option to vectorize text for compatibility.</li>
       </ul>
 
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Credits Note</h3>
-      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
+      <p className="text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
         The Heavy Imports will consume credits later on. Go to Credits for more info.
       </p>
       <p className="text-secondary-db-70 font-regular text-sm leading-relaxed mt-6">

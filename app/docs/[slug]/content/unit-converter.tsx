@@ -1,7 +1,7 @@
 export default function UnitConverter() {
   return (
     <>
-      <h2 className="text-2xl font-semibold text-secondary-db-100 mb-4">Unit Conversion Options</h2>
+      <h2 className="text-2xl font-semibold text-secondary-db-100 mb-4">Unit Conversion Specifications</h2>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
         A precision tool for converting design dimensions between different units, optimized for both print and digital outputs.
       </p>

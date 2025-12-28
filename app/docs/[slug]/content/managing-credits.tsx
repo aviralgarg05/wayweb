@@ -11,10 +11,11 @@ export default function ManagingCredits() {
         <li>System-level notices related to credits</li>
       </ul>
 
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Future Options</h3>
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Future options</h3>
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
         Future options such as subscriptions, credit packs, or unlimited plans will apply across all supported software platforms, not just a single tool.
       </p>
+
       <p className="text-secondary-db-70 font-regular text-sm leading-relaxed mt-6">
         Last updated: December 2025. Need help? Contact info@waysorted.com or submit feedback via Report a Bug.
       </p>

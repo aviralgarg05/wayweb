@@ -20,6 +20,11 @@ import UnitConverter from "./content/unit-converter";
 import UpcomingTools from "./content/upcoming-tools";
 import UsingCredits from "./content/using-credits";
 import Webhooks from "./content/webhooks";
+import SearchingAndBrowsingPlugins from "./content/searching-and-browsing-plugins";
+import CreatorGuidelines from "./content/creator-guidelines";
+import RequestAFeature from "./content/request-a-feature";
+import RatingsAndReviews from "./content/ratings-and-reviews";
+import PdfExporter from "./content/pdf-exporter";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const CONTENT_MAP: Record<string, React.ComponentType<any>> = {
@@ -43,6 +48,11 @@ const CONTENT_MAP: Record<string, React.ComponentType<any>> = {
   "upcoming-tools": UpcomingTools,
   "using-credits": UsingCredits,
   "webhooks": Webhooks,
+  "searching-and-browsing-plugins": SearchingAndBrowsingPlugins,
+  "creator-guidelines": CreatorGuidelines,
+  "request-a-feature": RequestAFeature,
+  "ratings-and-reviews": RatingsAndReviews,
+  "pdf-exporter": PdfExporter,
 };
 
 

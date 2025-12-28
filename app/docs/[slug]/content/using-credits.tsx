@@ -6,7 +6,7 @@ export default function UsingCredits() {
         Credits represent the relative system cost of using different tools and actions across platforms. This includes operations such as exports, imports, conversions, and advanced processing.
       </p>
 
-      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">In Beta</h3>
+      <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">In beta:</h3>
       <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
         <li>Credits are shown for visibility only</li>
         <li>No actions are blocked</li>
@@ -35,6 +35,7 @@ export default function UsingCredits() {
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
         Import tools handle external files and data. Usage indicators scale with file complexity and size to reflect processing cost. Previews remain accessible without restriction.
       </p>
+
       <p className="text-secondary-db-70 font-regular text-sm leading-relaxed mt-6">
         Last updated: December 2025. Need help? Contact info@waysorted.com or submit feedback via Report a Bug.
       </p>
