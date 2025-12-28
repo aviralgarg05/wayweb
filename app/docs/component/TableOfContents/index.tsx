@@ -53,52 +53,52 @@ export default function TableOfContents({
   }, [collectHeadings, rootSelector]);
 
   // Active section tracking
-useEffect(() => {
-  if (!headings.length) return;
+  useEffect(() => {
+    if (!headings.length) return;
 
-  const handleScroll = () => {
-    let current: string | null = null;
+    const handleScroll = () => {
+      let current: string | null = null;
 
-    for (const h of headings) {
-      const el = document.getElementById(h.id);
-      if (!el) continue;
-      const rect = el.getBoundingClientRect();
-      if (rect.top <= topOffsetPx + 8) {
-        current = h.id; // last heading that crossed the threshold
-      }
-    }
-
-    if (current) setActiveId(current);
-  };
-
-  window.addEventListener("scroll", handleScroll, { passive: true });
-  handleScroll(); // run once on mount
-
-  return () => window.removeEventListener("scroll", handleScroll);
-}, [headings, topOffsetPx]);
-
-// Footer collision / unstick logic
-useEffect(() => {
-  const stopEl = document.querySelector(stopAtSelector);
-  const container = containerRef.current;
-  if (!stopEl || !container) return;
-
-  const io = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting) {
-          setStuckToBottom(true);
-        } else {
-          setStuckToBottom(false);
+      for (const h of headings) {
+        const el = document.getElementById(h.id);
+        if (!el) continue;
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= topOffsetPx + 24) {
+          current = h.id; // last heading that crossed the threshold
         }
-      });
-    },
-    { root: null, threshold: 0 }
-  );
+      }
 
-  io.observe(stopEl);
-  return () => io.disconnect();
-}, [stopAtSelector]);
+      if (current) setActiveId(current);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // run once on mount
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [headings, topOffsetPx]);
+
+  // Footer collision / unstick logic
+  useEffect(() => {
+    const stopEl = document.querySelector(stopAtSelector);
+    const container = containerRef.current;
+    if (!stopEl || !container) return;
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            setStuckToBottom(true);
+          } else {
+            setStuckToBottom(false);
+          }
+        });
+      },
+      { root: null, threshold: 0 }
+    );
+
+    io.observe(stopEl);
+    return () => io.disconnect();
+  }, [stopAtSelector]);
 
 
   const baseAside = (
