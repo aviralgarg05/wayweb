@@ -1,12 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-
-// CORS headers for cross-origin requests (e.g., from Figma plugins)
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type, Authorization",
-};
+import { corsHeaders } from "@/lib/cors";
 
 export function middleware(request: NextRequest) {
   // Handle CORS preflight requests
@@ -20,7 +14,7 @@ export function middleware(request: NextRequest) {
   // For other requests, continue to the route handler
   // but add CORS headers to the response
   const response = NextResponse.next();
-  
+
   // Add CORS headers to all API responses
   if (request.nextUrl.pathname.startsWith("/api/")) {
     Object.entries(corsHeaders).forEach(([key, value]) => {

@@ -3,6 +3,7 @@ import dbConnect from "@/lib/db";
 import User from "@/models/user";
 import Session from "@/models/session";
 import OtpRequest from "@/models/otpRequest";
+export { OPTIONS } from "@/lib/cors";
 
 const PROVIDER_VERIFY_URI =
   process.env.VERIFY_URI || process.env.NEXT_PUBLIC_VERIFY_URI;
@@ -50,7 +51,7 @@ export async function POST(req: Request) {
     let provData: any = null;
     try {
       provData = provText ? JSON.parse(provText) : null;
-    } catch {}
+    } catch { }
 
     if (!provRes.ok) {
       return NextResponse.json(
