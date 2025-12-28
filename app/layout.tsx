@@ -4,8 +4,11 @@ import { Hanken_Grotesk } from "next/font/google";
 import { BannerProvider } from "@/context/BannerContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 // import EarlyAccessPopup from "@/components/EarlyAccessPopup";
 import SplashGate from "@/components/SplashGate";
+
+const GA_TRACKING_ID = "G-KS8MVKMRYV";
 
 const hanken = Hanken_Grotesk({ subsets: ["latin"] });
 
@@ -22,12 +25,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}');
+          `}
+        </Script>
+      </head>
       <body className={`${hanken.className} no-scrollbar select-none`}>
         <SplashGate minMs={4000} initialOnly>
-        <BannerProvider>
-          {children}
-          {/* <EarlyAccessPopup /> */}
-        </BannerProvider>
+          <BannerProvider>
+            {children}
+            {/* <EarlyAccessPopup /> */}
+          </BannerProvider>
         </SplashGate>
         <SpeedInsights />
         <Analytics />
