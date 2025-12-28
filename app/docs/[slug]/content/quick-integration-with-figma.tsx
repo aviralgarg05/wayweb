@@ -7,7 +7,7 @@ export default function QuickIntegrationWithFigma() {
       </p>
 
       <h3 className="text-xl font-semibold text-secondary-db-100 mt-10 mb-4">Accessing Waysorted in Figma</h3>
-      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed">
+      <ul className="list-disc list-inside text-secondary-db-70 font-regular text-xl leading-relaxed mt-4">
         <li>Open Figma and launch the Waysorted plugin from your plugins panel</li>
         <li>Sign in to your Waysorted account when prompted</li>
         <li>Once authenticated, all available Waysorted tools become accessible inside Figma Waysorted.</li>
@@ -20,6 +20,7 @@ export default function QuickIntegrationWithFigma() {
       <p className="text-secondary-db-70 font-regular text-xl leading-relaxed">
         Waysorted is compatible with the latest supported versions of Figma and is designed to run as a unified toolset to minimize plugin overhead. If you experience issues, verify Figma permissions, restart the application, or contact support for assistance.
       </p>
+
       <p className="text-secondary-db-70 font-regular text-sm leading-relaxed mt-6">
         Last updated: December 2025. Need help? Contact info@waysorted.com or use Report a Bug from your dashboard.
       </p>
