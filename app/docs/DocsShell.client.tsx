@@ -21,15 +21,12 @@ export interface SidebarItem {
 
 const sidebarData: SidebarItem[] = [
   { title: "General", links: ["Getting Started", "Account Creation and Setup", "Quick Integration with Figma", "FAQs"] },
-  { title: "Account and Workspace", links: ["Profile and Settings"], },
-  { title: "Plugins and Marketplace", links: ["Searching and Browsing Plugins", "Ratings and Reviews"] },
-  { title: "Tools Reference", links: ["Palettable", "Unit Converter", "Import Tool", "Upcoming Tools"] },
-  { title: "Design Standards", links: ["Waysorted Principles", "Accessibility(WCAG)", "UI/UX Best Practices", "Handoff Standards"] },
-  { title: "Troubleshooting & Support", links: ["Common Errors", "Diagnostics", "Contact Support", "Bug Reporting", "Request a Feature"] },
-  { title: "Legal", links: ["Privacy Policy", "Terms of Service", "Data Processing", "Cookie Policy", "Intellectual Property Rights"] },
-  { title: "Integrations and Cloud", links: ["Figma Sync", "Backup and Recovery", "Third-Party Integrations"] },
-  { title: "Credits and Usage", links: ["Overview", "Earning Credits", "Using Credits", "Managing Credits"] },
-  { title: "Waysorted API Documentation", links: ["Developer Focused Guide", "Overview and Authentication", "Examples", "Rate Limits", "Webhooks"] },
+  { title: "Account and Workspace", links: ["Profile and Settings"] },
+  { title: "Plugins and Marketplace", links: ["Searching and Browsing Plugins", "Creator Guidelines", "Request a Feature", "Ratings and Reviews"] },
+  { title: "Tools Reference", links: ["PDF Exporter", "Palettable", "Unit Converter", "Import Tool", "Upcoming Tools"] },
+  { title: "Troubleshooting & Support", links: ["Common Errors", "Diagnostics", "Contact Support", "Bug Reporting"] },
+  { title: "Credits and Usage", links: ["Earning Credits", "Using Credits", "Managing Credits"] },
+  { title: "Waysorted API Documentation", links: ["Developer Focused Guide", "Overview and Authentication", "Rate Limits", "Webhooks"] },
 ];
 
 const slugify = (s: string) =>
@@ -201,15 +198,15 @@ export default function DocsShell({
                     <div
                       key={item.title}
                       className={`w-72 rounded-xl ${item.links && isOpen
-                          ? "bg-primary-way-10 outline outline-2 outline-primary-way-10"
-                          : ""
+                        ? "bg-primary-way-10 outline outline-2 outline-primary-way-10"
+                        : ""
                         }`}
                     >
                       <button
                         onClick={() => item.links && toggleSection(item.title)}
                         className={`flex items-center justify-between w-72 px-2 py-2 text-left text-secondary-db-80 font-medium hover:bg-primary-way-10 cursor-pointer ${item.links && isOpen
-                            ? "bg-primary-way-100 text-white hover:bg-primary-way-100 rounded-t-xl"
-                            : ""
+                          ? "bg-primary-way-100 text-white hover:bg-primary-way-100 rounded-t-xl"
+                          : ""
                           }`}
                       >
                         {item.title}
@@ -253,8 +250,8 @@ export default function DocsShell({
                                     router.push(`/docs/${slug}`);
                                   }}
                                   className={`text-sm ml-2 font-regular cursor-pointer transition-colors duration-200 py-1 ${activeLink === link
-                                      ? "text-primary-way-100"
-                                      : "text-secondary-db-100 hover:text-primary-way-100"
+                                    ? "text-primary-way-100"
+                                    : "text-secondary-db-100 hover:text-primary-way-100"
                                     }`}
                                 >
                                   {link}
