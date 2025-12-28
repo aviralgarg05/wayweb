@@ -136,18 +136,21 @@ const FloatingStatsSection = () => {
         {/* Main content */}
         <div className="w-full flex flex-col items-center z-10 px-4">
           <p className="relative text-secondary-db-80 font-normal text-3xl md:text-6xl leading-tight w-[243px] md:w-[820px] max-w-none">
-            10k+ tools, yet creators keep{" "}
+            10k+ tools, yet creators
+            <br></br>
+            <span className="py-2">keep {" "}</span>
             <span className="relative inline-block">
-              <span className="opacity-0 px-4 py-1 rounded-full">Searching</span>
-              <span className="absolute inset-0 bg-secondary-db-90 text-white rounded-full px-4 py-1">
+              <span className="opacity-0 px-4 py-2 rounded-full">Searchingg</span>
+              <span className="absolute inset-0 bg-secondary-db-90 text-white rounded-full px-4 py-0">
                 {typedText}
               </span>
             </span>
           </p>
 
-          <p className="text-secondary-db-60 text-lg md:text-2xl font-medium mt-6 md:w-[500px] w-[340px] max-w-none translate-y-50 md:translate-y-0">
+          <p className="text-secondary-db-60 text-lg md:text-xl font-medium mt-6 md:w-[550px] w-[340px] max-w-none translate-y-50 md:translate-y-40">
             <span className="text-secondary-db-90">That&apos;s why we&apos;re building Way,</span> Because productivity
             deserves faster execution than endless searching.
+            <span className="inline-block w-[2px] h-[1em] translate-y-[2px] bg-secondary-db-90 ml-1 animate-pulse" />
           </p>
         </div>
 

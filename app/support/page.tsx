@@ -27,8 +27,8 @@ export default function SupportPage() {
               <Image
                 src="/icons/support.svg"
                 alt="Support"
-                width={24}
-                height={24}
+                width={30}
+                height={30}
                 className="inline block p-1"
               />
               <span className="pl-1 pr-2 inline text-secondary-db-100">Support</span>
@@ -36,11 +36,11 @@ export default function SupportPage() {
 
             {/* Heading */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl mt-4 font-semibold text-secondary-db-100">
-              We&apos;re Here to Help
+              Get in Touch with Waysorted
             </h1>
 
             {/* Contact Section */}
-            <div className="blue-bg-dots w-full max-w-6xl px-4 sm:px-6 md:px-8 py-6 sm:py-8 my-8 md:my-12 rounded-2xl mx-auto flex flex-col md:flex-row items-stretch text-white relative gap-6 md:gap-8">
+            <div className="blue-bg-dots w-full max-w-7xl px-4 sm:px-6 md:px-8 py-6 sm:py-8 my-8 md:my-12 rounded-2xl mx-auto flex flex-col md:flex-row items-stretch text-white relative gap-6 md:gap-8">
               {/* Left Section */}
               <div className="flex-1">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl text-left font-semibold mb-3">
@@ -77,8 +77,8 @@ export default function SupportPage() {
               <Image
                 src="/icons/faqs.svg"
                 alt="FAQs"
-                width={24}
-                height={24}
+                width={30}
+                height={30}
                 className="inline block p-1"
               />
               <span className="pl-1 pr-2 py-1 inline text-secondary-db-100">FAQs</span>

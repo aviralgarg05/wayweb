@@ -52,8 +52,8 @@ const UserSchema = new Schema<IUser, UserModel, IUserMethods, IUserStatics>(
     name: { type: String, trim: true },
     picture: { type: String },
     favorites: [{ type: String }],
-    earlyAccess: { type: Boolean, default: false },
-    creditsRemaining: { type: Number, default: 5 },
+    earlyAccess: { type: Boolean, default: true },
+    creditsRemaining: { type: Number, default: 2000 },
     hasAnyNotifications: { type: Boolean, default: false },
   },
   {
@@ -122,9 +122,9 @@ UserSchema.methods.toPublic = function () {
 UserSchema.pre("save", function (next) {
   if (this.isNew) {
     if (this.earlyAccess) {
-      this.creditsRemaining = 200;
+      this.creditsRemaining = 20000;
     } else {
-      this.creditsRemaining = 5;
+      this.creditsRemaining = 2000;
     }
   }
   next();

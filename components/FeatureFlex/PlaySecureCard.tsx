@@ -11,7 +11,7 @@ function clamp(n: number, min: number, max: number) { return Math.max(min, Math.
 const EDGE_PAD = 1;
 const BUTTON_WIDTH = 100;
 const BUTTON_HEIGHT = 24;
-const BALL_RADIUS = 20;
+const BALL_RADIUS = 15;
 
 const BALL_SVG = `<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20.2606 27.4533C16.9631 29.0457 11.9354 28.5588 11.0039 27.5074L10.2922 27.2111C8.41446 27.044 4.58088 23.3962 3.77316 20.4894L3.56579 19.9614C2.45317 17.617 2.39338 12.4789 3.77921 10.6621L3.98203 10.2001C4.42665 7.7729 8.5026 4.14289 10.6955 3.77861L10.6964 3.77823C10.6955 3.77861 11.2317 3.57017 11.2317 3.57017C13.9115 2.09159 19.3139 2.75832 20.729 3.90832L21.3228 4.18929C23.1771 4.75141 27.0385 8.52247 27.4519 10.9346L27.4522 10.9356C27.5399 11.1603 27.5954 11.3977 27.6957 11.6154C28.9277 14.29 28.4971 18.5919 27.418 20.3096L27.2231 20.775C26.9363 22.979 22.7282 27.0131 20.9965 27.1323L20.2606 27.4533Z" fill="#FC822B"/>
@@ -260,7 +260,7 @@ export default function PlaySecureCard({ className }: { className?: string }) {
       <canvas className="absolute inset-0 pointer-events-none rounded-2xl z-0" ref={canvasRef} aria-hidden="true" />
 
       <div className="relative z-10 flex flex-col items-center text-center">
-        <div className="h-12 w-12 rounded-xl bg-primary-way-90 flex items-center justify-center">
+        <div className="h-12 w-12 rounded-xl bg-primary-way-90 flex items-center mb-4 justify-center">
           <Image src="/icons/ball_1.svg" alt="Play Secure" width={36} height={36} />
         </div>
         <p className="text-secondary-db-80 text-sm mt-1">

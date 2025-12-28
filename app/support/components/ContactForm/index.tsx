@@ -72,7 +72,7 @@ export default function ContactForm() {
       >
         {/* Front side - Form */}
         <div className="absolute inset-0 [backface-visibility:hidden]">
-          <div className="bg-white/25 rounded-xl shadow-lg p-4 sm:p-6 md:p-8 text-gray-800 h-full">
+          <div className="bg-white/15 rounded-xl shadow-lg p-4 sm:p-6 md:p-8 text-gray-800 h-full">
             {error && (
               <div className="mb-4 p-3 bg-red-100/90 border border-red-300 text-red-700 rounded-md text-sm">
                 {error}

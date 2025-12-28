@@ -48,7 +48,7 @@ export default function Testimonials() {
         <section className="bg-mavens px-6 md:px-20 lg:px-32 py-12 mx-auto">
             {/* Heading Section */}
             <section className="w-full flex flex-col items-center justify-center text-center pt-11">
-                <span className="inline-flex items-center text-center text-sm font-medium bg-white rounded-md">
+                <span className="inline-flex items-center text-center text-sm font-medium bg-white rounded-md mb-6">
                     <Image
                         src="/icons/mavens.svg"
                         alt="Mavens"
@@ -61,7 +61,7 @@ export default function Testimonials() {
                     </span>
                 </span>
 
-                <h1 className="mt-4 mb-3 text-2xl md:text-4xl font-semibold text-secondary-db-100">
+                <h1 className="mt-4 mb-4 text-2xl md:text-4xl font-semibold text-secondary-db-100">
                     Hear From Way{" "}
                     <span className="bg-tertiary-orange-500/12 rounded-lg text-tertiary-orange-500 px-4 py-1">
                         Mavens
@@ -100,8 +100,8 @@ export default function Testimonials() {
                             <Image
                                 src={testimonial.image}
                                 alt={testimonial.author}
-                                width={50}
-                                height={50}
+                                width={48}
+                                height={48}
                                 className="w-full h-full object-cover rounded-xl md:rounded-2xl"
                             />
                             {activeIndex === index && (

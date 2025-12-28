@@ -46,11 +46,10 @@ const JoinUsMobile = () => (
       Be part of a fast-moving startup, where your work makes a real impact from day one.
     </p>
     <GlowStarButton
-      onClick={() => window.open("https://discord.gg/U2XF76WxNv", "_blank")}
       className="bg-secondary-db-100 text-white px-6 py-3 rounded-xl font-semibold text-base flex items-center justify-center w-full"
       style={{ minHeight: "48px" }}
     >
-      Join Our Discord
+      Join Our Team
       <Image
         src="/icons/arrow-white.svg"
         alt="Arrow Right"
@@ -77,10 +76,9 @@ const JoinUsDesktop = () => (
       <p className="text-sm">Be part of a fast-moving startup, where your work makes a real impact from day one.</p>
     </div>
     <GlowStarButton
-      onClick={() => window.open("https://discord.gg/U2XF76WxNv", "_blank")}
       className="bg-secondary-db-100 text-white px-4 py-2 font-semibold text-base rounded-xl cursor-pointer"
     >
-      Join Our Discord
+      Join Our Team
       <Image
         src="/icons/arrow-white.svg"
         alt="Arrow Right"

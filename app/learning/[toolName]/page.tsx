@@ -129,7 +129,7 @@ export default function LearnMorePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-5 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 sm:gap-6">
           <div>
             <h1 className="text-3xl sm:text-6xl font-medium text-secondary-db-100 leading-tight w-full sm:w-lg">
-              Explore Every <span className="text-primary-way-100">Shade</span> with Ease
+              {tool?.heading ?? ''}
             </h1>
             <div>
               <button className="bg-secondary-db-100 hidden md:block text-white my-6 sm:my-8 py-3 px-6 sm:px-7 font-semibold text-base rounded-full cursor-pointer hover:bg-secondary-db-90">
@@ -138,8 +138,7 @@ export default function LearnMorePage() {
             </div>
           </div>
           <p className="text-secondary-db-100 mt-4 sm:mt-16 text-base sm:text-xl font-medium max-w-full sm:max-w-lg">
-            {tool?.shortDescription ?? ''}
-            <span className="text-secondary-db-70">—all in one tool.</span>
+            {tool?.tagline ?? ''}
           </p>
         </div>
 

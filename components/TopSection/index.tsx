@@ -13,7 +13,7 @@ export default function TopSection() {
       </p>
 
       {/* Heading */}
-      <h1 className="text-2xl sm:text-4xl font-medium text-secondary-db-100 mb-4 max-w-[345px] md:max-w-none leading-tight md:leading-snug">
+      <h1 className="text-2xl sm:text-4xl font-medium text-secondary-db-100 mb-14 max-w-[345px] md:max-w-none leading-tight md:leading-snug">
         Designed to work seamlessly{" "}
         <span className="text-secondary-db-60">
           into your Software
@@ -37,7 +37,7 @@ export default function TopSection() {
             />
             <span className="font-semibold flex items-center gap-2">
               For Figma
-              <span className="bg-white rounded-full px-2 py-0.5 text-[10px] md:text-xs font-medium text-primary-way-100 whitespace-nowrap shadow-sm">
+              <span className="bg-white rounded-full px-1 py-0.25 text-[10px] font-medium text-primary-way-100 whitespace-nowrap">
                 Beta Version
               </span>
             </span>

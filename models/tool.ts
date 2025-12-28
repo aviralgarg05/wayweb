@@ -27,6 +27,7 @@ export interface ITool {
   _id: string | { toString(): string };
   name: string;
   slug: string;
+  heading: string;
   description: string;
   shortDescription: string;
   icon: string;
@@ -61,6 +62,7 @@ export interface IToolMethods {
     id: string;
     name: string;
     slug: string;
+    heading: string;
     description: string;
     shortDescription: string;
     icon: string;
@@ -168,6 +170,10 @@ const ToolSchema = new Schema<ITool, ToolModel, IToolMethods, IToolStatics>(
       trim: true,
       lowercase: true,
       match: /^[a-z0-9-]+$/,
+    },
+    heading: {
+      type: String,
+      required: true,
     },
     description: {
       type: String,
@@ -319,6 +325,7 @@ ToolSchema.methods.toPublic = function () {
     id: this._id.toString(),
     name: this.name,
     slug: this.slug,
+    heading: this.heading,
     description: this.description,
     shortDescription: this.shortDescription,
     icon: this.icon,

@@ -153,8 +153,8 @@ const Header = ({ showBanner, setShowBanner }: HeaderProps) => {
     >
       {showBanner && (
         <div className="w-full bg-primary-way-100 text-white text-center py-2 text-sm relative">
-          Get early access to Waysorted Figma...{' '}
-          <Link href="/get-early-access" className="underline">
+          Try Palettable for quick Color schemes and Contrast check ....{' '}
+          <Link href="/learning/palettable" className="underline">
             Click here
           </Link>
           <button
