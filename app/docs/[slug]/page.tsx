@@ -25,6 +25,15 @@ import CreatorGuidelines from "./content/creator-guidelines";
 import RequestAFeature from "./content/request-a-feature";
 import RatingsAndReviews from "./content/ratings-and-reviews";
 import PdfExporter from "./content/pdf-exporter";
+import PrivacyPolicy from "./content/privacy-policy";
+import TermsOfService from "./content/terms-of-service";
+import DataProcessing from "./content/data-processing";
+import CookiePolicy from "./content/cookie-policy";
+import IntellectualPropertyRights from "./content/intellectual-property-rights";
+import FigmaSync from "./content/figma-sync";
+import BackupAndRecovery from "./content/backup-and-recovery";
+import ThirdPartyIntegrations from "./content/third-party-integrations";
+import Overview from "./content/overview";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const CONTENT_MAP: Record<string, React.ComponentType<any>> = {
@@ -53,6 +62,15 @@ const CONTENT_MAP: Record<string, React.ComponentType<any>> = {
   "request-a-feature": RequestAFeature,
   "ratings-and-reviews": RatingsAndReviews,
   "pdf-exporter": PdfExporter,
+  "privacy-policy": PrivacyPolicy,
+  "terms-of-service": TermsOfService,
+  "data-processing": DataProcessing,
+  "cookie-policy": CookiePolicy,
+  "intellectual-property-rights": IntellectualPropertyRights,
+  "figma-sync": FigmaSync,
+  "backup-and-recovery": BackupAndRecovery,
+  "third-party-integrations": ThirdPartyIntegrations,
+  "overview": Overview,
 };
 
 

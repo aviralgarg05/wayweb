@@ -25,7 +25,9 @@ const sidebarData: SidebarItem[] = [
   { title: "Plugins and Marketplace", links: ["Searching and Browsing Plugins", "Creator Guidelines", "Request a Feature", "Ratings and Reviews"] },
   { title: "Tools Reference", links: ["PDF Exporter", "Palettable", "Unit Converter", "Import Tool", "Upcoming Tools"] },
   { title: "Troubleshooting & Support", links: ["Common Errors", "Diagnostics", "Contact Support", "Bug Reporting"] },
-  { title: "Credits and Usage", links: ["Earning Credits", "Using Credits", "Managing Credits"] },
+  { title: "Legal", links: ["Privacy Policy", "Terms of Service", "Data Processing", "Cookie Policy", "Intellectual Property Rights"] },
+  { title: "Integrations and Cloud", links: ["Figma Sync", "Backup and Recovery", "Third-Party Integrations"] },
+  { title: "Credits and Usage", links: ["Overview", "Earning Credits", "Using Credits", "Managing Credits"] },
   { title: "Waysorted API Documentation", links: ["Developer Focused Guide", "Overview and Authentication", "Rate Limits", "Webhooks"] },
 ];
 
