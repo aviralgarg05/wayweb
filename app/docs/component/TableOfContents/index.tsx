@@ -139,6 +139,7 @@ export default function TableOfContents({
                     href={`#${h.id}`}
                     onClick={(e) => {
                       e.preventDefault();
+                      setActiveId(h.id); // Instantly highlight clicked item
                       const el = document.getElementById(h.id);
                       if (el) {
                         window.history.replaceState(null, "", `#${h.id}`);
